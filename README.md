@@ -9,6 +9,7 @@ Remote Desktop Protocol
 + Kali Linux
 + Parrot OS
 + Ubuntu
++ Windows 11
 + Windows 10
 + Windows 7
 + add more..
