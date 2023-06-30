@@ -1,0 +1,9 @@
+pyTelegramBotAPI
+screen_brightness_control
+opencv-python
+pyautogui
+requests
+pyautogui
+pulsectl
+psutil
+GPUtil
