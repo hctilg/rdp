@@ -241,15 +241,12 @@ class Main(TelegramBotAPI):
           self.answer_callback_query(qid, "Error!", show_alert=True)
           self.delete_message(user_id, msg_id)
 
-    @self.message_handler(content_types=['text', 'video', 'photo', 'audio', 'voice', 'document', 'location'])
+    @self.message_handler(chat_types=['private'])
     def handler(update):
 
       text = update.text
       msg_id = update.message_id
       user_id = update.chat.id
-
-      if update.chat.type != 'private':
-        return False
       
       db = JsonBase('config.json')
       conf = db.get()
